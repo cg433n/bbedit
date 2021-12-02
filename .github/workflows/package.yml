@@ -1,5 +1,8 @@
 name: Package
-on: [push]
+on:
+  push:
+    tags:
+      - "v*"
 jobs:
   package:
     runs-on: ubuntu-latest
@@ -13,3 +16,9 @@ jobs:
         with:
             name: saguarospace-bbedit-utils.tar.gz
             path: saguarospace-bbedit-utils.tar.gz
+  
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          files: saguarospace-bbedit-utils.tar.gz
