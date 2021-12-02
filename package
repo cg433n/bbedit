@@ -7,6 +7,8 @@ import os.path
 
 output_file = "saguarospace-bbedit-utils.tar.gz"
 input_dir = "./Library"
+makefile = "./Makefile"
 
 with tarfile.open(output_file, "w:gz") as tar:
     tar.add(input_dir, arcname=os.path.basename(input_dir))
+    tar.add(makefile, arcname=os.path.basename(makefile))
