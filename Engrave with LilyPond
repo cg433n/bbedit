@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# Place in $HOME/Library/Application\ Support/BBEdit/Scripts
+
+# This script runs LilyPond on the currently open document in BBEdit
+# Originally from https://gist.github.com/ods94065/1571724
+# and https://stackoverflow.com/questions/6791331/shell-script-to-typeset-lilypond-files-with-textwrangler/8755400#8755400
+
+# Change this path, and these options, to suit your installation and preferences.
+LILYAPP=`which lilypond`
+LILYOPTIONS=
+
+# BBEdit passes the pathname to the currently open document through BB_DOC_PATH.
+SRC_LY="$(basename "$BB_DOC_PATH")"
+
+if [ -z "$SRC_LY" ]; then
+	echo "ERROR: there is no document on disk to engrave!"
+	echo "If you are working on a new document, save your document and rerun this script."
+	exit 1
+fi
+
+SRC_ROOT="${SRC_LY%.ly}"
+SRC_PDF="${SRC_ROOT}.pdf"
+SRC_DIR="$(dirname "$BB_DOC_PATH")"
+
+cd "$SRC_DIR" && "$LILYAPP" $LILYOPTIONS -o "$SRC_ROOT" "$SRC_LY" && open "$SRC_PDF"
