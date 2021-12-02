@@ -1,5 +1,3 @@
-# BBEdit Miscellany
+# Saguaro Space BBEdit Utilities
 
-## Codeless Language Modules
-
-LilyPond
+Package by running `./package`.

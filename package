@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+
+# Package BBEdit utils for use with a package manager
+
+import tarfile
+import os.path
+
+output_file = "saguaro-space-bbedit-utils.tar.gz"
+input_dir = "./Library"
+
+with tarfile.open(output_file, "w:gz") as tar:
+    tar.add(input_dir, arcname=os.path.basename(input_dir))
