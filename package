@@ -5,7 +5,7 @@
 import tarfile
 import os.path
 
-output_file = "saguaro-space-bbedit-utils.tar.gz"
+output_file = "saguarospace-bbedit-utils.tar.gz"
 input_dir = "./Library"
 
 with tarfile.open(output_file, "w:gz") as tar:

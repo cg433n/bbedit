@@ -11,5 +11,5 @@ jobs:
       - run: ./package
       - uses: actions/upload-artifact@v2
         with:
-            name: saguaro-space-bbedit-utils
-            path: saguaro-space-bbedit-utils.tar.gz
+            name: saguarospace-bbedit-utils.tar.gz
+            path: saguarospace-bbedit-utils.tar.gz
