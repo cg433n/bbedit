@@ -1,3 +1,10 @@
 # Saguaro Space BBEdit Utilities
 
-Package by running `./package`.
+## Language Modules
+
+- LilyPond
+- HCL (for Terraform) by [yb66](https://github.com/yb66/bbedit-hcl)
+
+## Packaging
+
+Package for distribution by running `./package`.
