@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!--
+    BBEdit codeless language module for nginx configs.
+    Requires BBEdit 8.0 or higher. To install, copy here:
+
+        ~/Library/Application Support/BBEdit/Language Modules/
+
+    and relaunch BBEdit.
+-->
+<dict>
+    <key>BBEditDocumentType</key> <string>CodelessLanguageModule</string>
+    <key>BBLMLanguageCode</key> <string>Ngnx</string>
+    <key>BBLMColorsSyntax</key> <true/>
+    <key>BBLMIsCaseSensitive</key> <false/>
+    <key>BBLMLanguageDisplayName</key> <string>Nginx Configuration</string>
+    <key>BBLMScansFunctions</key> <true/>
+    <key>BBLMSupportsTextCompletion</key> <true/>
+    <key>BBLMScansFunctions</key> <true/>
+    <key>BBLMCommentLineDefault</key> <string>#</string>
+
+    <key>BBLMPreferredFilenameExtension</key> <string>conf</string>
+    <key>BBLMSuffixMap</key>
+    <array>
+        <dict>
+            <key>BBLMLanguageSuffix</key>
+            <string>.conf</string>
+        </dict>
+    </array>
+    <key>BBLMFileNamesToMatch</key>
+    <array>
+        <string>nginx.conf</string>
+    </array>
+
+    <key>BBLMKeywordList</key>
+    <array>
+        <string>include</string>
+    </array>
+
+    <key>BBLMPredefinedNameList</key>
+    <array>
+        <string>accept_mutex</string>
+        <string>accept_mutex_delay</string>
+        <string>access_log</string>
+        <string>add_after_body</string>
+        <string>add_before_body</string>
+        <string>add_header</string>
+        <string>addition_types</string>
+        <string>aio</string>
+        <string>alias</string>
+        <string>allow</string>
+        <string>ancient_browser</string>
+        <string>ancient_browser_value</string>
+        <string>auth_basic</string>
+        <string>auth_basic_user_file</string>
+        <string>auth_http</string>
+        <string>auth_http_header</string>
+        <string>auth_http_timeout</string>
+        <string>auth_request</string>
+        <string>auth_request_set</string>
+        <string>autoindex</string>
+        <string>autoindex_exact_size</string>
+        <string>autoindex_localtime</string>
+        <string>break</string>
+        <string>charset</string>
+        <string>charset_map</string>
+        <string>charset_types</string>
+        <string>chunked_transfer_encoding</string>
+        <string>client_body_buffer_size</string>
+        <string>client_body_in_file_only</string>
+        <string>client_body_in_single_buffer</string>
+        <string>client_body_temp_path</string>
+        <string>client_body_timeout</string>
+        <string>client_header_buffer_size</string>
+        <string>client_header_timeout</string>
+        <string>client_max_body_size</string>
+        <string>connection_pool_size</string>
+        <string>create_full_put_path</string>
+        <string>daemon</string>
+        <string>dav_access</string>
+        <string>dav_methods</string>
+        <string>debug_connection</string>
+        <string>debug_points</string>
+        <string>default_type</string>
+        <string>deny</string>
+        <string>directio</string>
+        <string>directio_alignment</string>
+        <string>disable_symlinks</string>
+        <string>empty_gif</string>
+        <string>env</string>
+        <string>error_log</string>
+        <string>error_page</string>
+        <string>etag</string>
+        <string>events</string>
+        <string>expires</string>
+        <string>f4f</string>
+        <string>f4f_buffer_size</string>
+        <string>fastcgi_bind</string>
+        <string>fastcgi_buffer_size</string>
+        <string>fastcgi_buffering</string>
+        <string>fastcgi_buffers</string>
+        <string>fastcgi_busy_buffers_size</string>
+        <string>fastcgi_cache</string>
+        <string>fastcgi_cache_bypass</string>
+        <string>fastcgi_cache_key</string>
+        <string>fastcgi_cache_lock</string>
+        <string>fastcgi_cache_lock_timeout</string>
+        <string>fastcgi_cache_methods</string>
+        <string>fastcgi_cache_min_uses</string>
+        <string>fastcgi_cache_path</string>
+        <string>fastcgi_cache_purge</string>
+        <string>fastcgi_cache_revalidate</string>
+        <string>fastcgi_cache_use_stale</string>
+        <string>fastcgi_cache_valid</string>
+        <string>fastcgi_catch_stderr</string>
+        <string>fastcgi_connect_timeout</string>
+        <string>fastcgi_hide_header</string>
+        <string>fastcgi_ignore_client_abort</string>
+        <string>fastcgi_ignore_headers</string>
+        <string>fastcgi_index</string>
+        <string>fastcgi_intercept_errors</string>
+        <string>fastcgi_keep_conn</string>
+        <string>fastcgi_max_temp_file_size</string>
+        <string>fastcgi_next_upstream</string>
+        <string>fastcgi_no_cache</string>
+        <string>fastcgi_param</string>
+        <string>fastcgi_pass</string>
+        <string>fastcgi_pass_header</string>
+        <string>fastcgi_pass_request_body</string>
+        <string>fastcgi_pass_request_headers</string>
+        <string>fastcgi_read_timeout</string>
+        <string>fastcgi_send_lowat</string>
+        <string>fastcgi_send_timeout</string>
+        <string>fastcgi_split_path_info</string>
+        <string>fastcgi_store</string>
+        <string>fastcgi_store_access</string>
+        <string>fastcgi_temp_file_write_size</string>
+        <string>fastcgi_temp_path</string>
+        <string>flv</string>
+        <string>geo</string>
+        <string>geoip_city</string>
+        <string>geoip_country</string>
+        <string>geoip_org</string>
+        <string>geoip_proxy</string>
+        <string>geoip_proxy_recursive</string>
+        <string>gunzip</string>
+        <string>gunzip_buffers</string>
+        <string>gzip</string>
+        <string>gzip_buffers</string>
+        <string>gzip_comp_level</string>
+        <string>gzip_disable</string>
+        <string>gzip_http_version</string>
+        <string>gzip_min_length</string>
+        <string>gzip_proxied</string>
+        <string>gzip_static</string>
+        <string>gzip_types</string>
+        <string>gzip_vary</string>
+        <string>health_check</string>
+        <string>hls</string>
+        <string>hls_buffers</string>
+        <string>hls_fragment</string>
+        <string>hls_mp4_buffer_size</string>
+        <string>hls_mp4_max_buffer_size</string>
+        <string>http</string>
+        <string>if</string>
+        <string>if_modified_since</string>
+        <string>ignore_invalid_headers</string>
+        <string>image_filter</string>
+        <string>image_filter_buffer</string>
+        <string>image_filter_interlace</string>
+        <string>image_filter_jpeg_quality</string>
+        <string>image_filter_sharpen</string>
+        <string>image_filter_transparency</string>
+        <string>imap_auth</string>
+        <string>imap_capabilities</string>
+        <string>imap_client_buffer</string>
+        <string>index</string>
+        <string>internal</string>
+        <string>ip_hash</string>
+        <string>keepalive</string>
+        <string>keepalive_disable</string>
+        <string>keepalive_requests</string>
+        <string>keepalive_timeout</string>
+        <string>large_client_header_buffers</string>
+        <string>least_conn</string>
+        <string>limit_conn</string>
+        <string>limit_conn_log_level</string>
+        <string>limit_conn_status</string>
+        <string>limit_conn_zone</string>
+        <string>limit_except</string>
+        <string>limit_rate</string>
+        <string>limit_rate_after</string>
+        <string>limit_req</string>
+        <string>limit_req_log_level</string>
+        <string>limit_req_status</string>
+        <string>limit_req_zone</string>
+        <string>limit_zone</string>
+        <string>lingering_close</string>
+        <string>lingering_time</string>
+        <string>lingering_timeout</string>
+        <string>listen</string>
+        <string>listen</string>
+        <string>location</string>
+        <string>lock_file</string>
+        <string>log_format</string>
+        <string>log_not_found</string>
+        <string>log_subrequest</string>
+        <string>mail</string>
+        <string>map</string>
+        <string>map_hash_bucket_size</string>
+        <string>map_hash_max_size</string>
+        <string>master_process</string>
+        <string>match</string>
+        <string>max_ranges</string>
+        <string>memcached_bind</string>
+        <string>memcached_buffer_size</string>
+        <string>memcached_connect_timeout</string>
+        <string>memcached_gzip_flag</string>
+        <string>memcached_next_upstream</string>
+        <string>memcached_pass</string>
+        <string>memcached_read_timeout</string>
+        <string>memcached_send_timeout</string>
+        <string>merge_slashes</string>
+        <string>min_delete_depth</string>
+        <string>modern_browser</string>
+        <string>modern_browser_value</string>
+        <string>mp4</string>
+        <string>mp4_buffer_size</string>
+        <string>mp4_limit_rate</string>
+        <string>mp4_limit_rate_after</string>
+        <string>mp4_max_buffer_size</string>
+        <string>msie_padding</string>
+        <string>msie_refresh</string>
+        <string>multi_accept</string>
+        <string>open_file_cache</string>
+        <string>open_file_cache_errors</string>
+        <string>open_file_cache_min_uses</string>
+        <string>open_file_cache_valid</string>
+        <string>open_log_file_cache</string>
+        <string>optimize_server_names</string>
+        <string>output_buffers</string>
+        <string>override_charset</string>
+        <string>pcre_jit</string>
+        <string>perl</string>
+        <string>perl_modules</string>
+        <string>perl_require</string>
+        <string>perl_set</string>
+        <string>pid</string>
+        <string>pop3_auth</string>
+        <string>pop3_capabilities</string>
+        <string>port_in_redirect</string>
+        <string>postpone_output</string>
+        <string>protocol</string>
+        <string>proxy_bind</string>
+        <string>proxy_buffer</string>
+        <string>proxy_buffer_size</string>
+        <string>proxy_buffering</string>
+        <string>proxy_buffers</string>
+        <string>proxy_busy_buffers_size</string>
+        <string>proxy_cache</string>
+        <string>proxy_cache_bypass</string>
+        <string>proxy_cache_key</string>
+        <string>proxy_cache_lock</string>
+        <string>proxy_cache_lock_timeout</string>
+        <string>proxy_cache_methods</string>
+        <string>proxy_cache_min_uses</string>
+        <string>proxy_cache_path</string>
+        <string>proxy_cache_purge</string>
+        <string>proxy_cache_revalidate</string>
+        <string>proxy_cache_use_stale</string>
+        <string>proxy_cache_valid</string>
+        <string>proxy_connect_timeout</string>
+        <string>proxy_cookie_domain</string>
+        <string>proxy_cookie_path</string>
+        <string>proxy_headers_hash_bucket_size</string>
+        <string>proxy_headers_hash_max_size</string>
+        <string>proxy_hide_header</string>
+        <string>proxy_http_version</string>
+        <string>proxy_ignore_client_abort</string>
+        <string>proxy_ignore_headers</string>
+        <string>proxy_intercept_errors</string>
+        <string>proxy_max_temp_file_size</string>
+        <string>proxy_method</string>
+        <string>proxy_next_upstream</string>
+        <string>proxy_no_cache</string>
+        <string>proxy_pass</string>
+        <string>proxy_pass_error_message</string>
+        <string>proxy_pass_header</string>
+        <string>proxy_pass_request_body</string>
+        <string>proxy_pass_request_headers</string>
+        <string>proxy_read_timeout</string>
+        <string>proxy_redirect</string>
+        <string>proxy_send_lowat</string>
+        <string>proxy_send_timeout</string>
+        <string>proxy_set_body</string>
+        <string>proxy_set_header</string>
+        <string>proxy_ssl_ciphers</string>
+        <string>proxy_ssl_protocols</string>
+        <string>proxy_ssl_session_reuse</string>
+        <string>proxy_store</string>
+        <string>proxy_store_access</string>
+        <string>proxy_temp_file_write_size</string>
+        <string>proxy_temp_path</string>
+        <string>proxy_timeout</string>
+        <string>random_index</string>
+        <string>read_ahead</string>
+        <string>real_ip_header</string>
+        <string>real_ip_recursive</string>
+        <string>recursive_error_pages</string>
+        <string>referer_hash_bucket_size</string>
+        <string>referer_hash_max_size</string>
+        <string>request_pool_size</string>
+        <string>reset_timedout_connection</string>
+        <string>resolver</string>
+        <string>resolver_timeout</string>
+        <string>return</string>
+        <string>rewrite</string>
+        <string>rewrite_log</string>
+        <string>root</string>
+        <string>satisfy</string>
+        <string>satisfy_any</string>
+        <string>secure_link</string>
+        <string>secure_link_md5</string>
+        <string>secure_link_secret</string>
+        <string>send_lowat</string>
+        <string>send_timeout</string>
+        <string>sendfile</string>
+        <string>sendfile_max_chunk</string>
+        <string>server</string>
+        <string>server</string>
+        <string>server</string>
+        <string>server_name</string>
+        <string>server_name</string>
+        <string>server_name_in_redirect</string>
+        <string>server_names_hash_bucket_size</string>
+        <string>server_names_hash_max_size</string>
+        <string>server_tokens</string>
+        <string>session_log</string>
+        <string>session_log_format</string>
+        <string>session_log_zone</string>
+        <string>set</string>
+        <string>set_real_ip_from</string>
+        <string>smtp_auth</string>
+        <string>smtp_capabilities</string>
+        <string>so_keepalive</string>
+        <string>source_charset</string>
+        <string>spdy_chunk_size</string>
+        <string>spdy_headers_comp</string>
+        <string>split_clients</string>
+        <string>ssi</string>
+        <string>ssi_last_modified</string>
+        <string>ssi_min_file_chunk</string>
+        <string>ssi_silent_errors</string>
+        <string>ssi_types</string>
+        <string>ssi_value_length</string>
+        <string>ssl</string>
+        <string>ssl</string>
+        <string>ssl_buffer_size</string>
+        <string>ssl_certificate</string>
+        <string>ssl_certificate</string>
+        <string>ssl_certificate_key</string>
+        <string>ssl_certificate_key</string>
+        <string>ssl_ciphers</string>
+        <string>ssl_client_certificate</string>
+        <string>ssl_crl</string>
+        <string>ssl_dhparam</string>
+        <string>ssl_ecdh_curve</string>
+        <string>ssl_engine</string>
+        <string>ssl_prefer_server_ciphers</string>
+        <string>ssl_prefer_server_ciphers</string>
+        <string>ssl_protocols</string>
+        <string>ssl_protocols</string>
+        <string>ssl_session_cache</string>
+        <string>ssl_session_cache</string>
+        <string>ssl_session_ticket_key</string>
+        <string>ssl_session_ticket_key</string>
+        <string>ssl_session_tickets</string>
+        <string>ssl_session_timeout</string>
+        <string>ssl_session_timeout</string>
+        <string>ssl_stapling</string>
+        <string>ssl_stapling_file</string>
+        <string>ssl_stapling_responder</string>
+        <string>ssl_stapling_verify</string>
+        <string>ssl_trusted_certificate</string>
+        <string>ssl_verify_client</string>
+        <string>ssl_verify_depth</string>
+        <string>starttls</string>
+        <string>status</string>
+        <string>status_format</string>
+        <string>status_zone</string>
+        <string>sticky</string>
+        <string>sticky_cookie_insert</string>
+        <string>sub_filter</string>
+        <string>sub_filter_last_modified</string>
+        <string>sub_filter_once</string>
+        <string>sub_filter_types</string>
+        <string>tcp_nodelay</string>
+        <string>tcp_nopush</string>
+        <string>timeout</string>
+        <string>timer_resolution</string>
+        <string>try_files</string>
+        <string>types</string>
+        <string>types_hash_bucket_size</string>
+        <string>types_hash_max_size</string>
+        <string>underscores_in_headers</string>
+        <string>uninitialized_variable_warn</string>
+        <string>upstream</string>
+        <string>upstream_conf</string>
+        <string>use</string>
+        <string>user</string>
+        <string>userid</string>
+        <string>userid_domain</string>
+        <string>userid_expires</string>
+        <string>userid_mark</string>
+        <string>userid_name</string>
+        <string>userid_p3p</string>
+        <string>userid_path</string>
+        <string>userid_service</string>
+        <string>valid_referers</string>
+        <string>variables_hash_bucket_size</string>
+        <string>variables_hash_max_size</string>
+        <string>worker_aio_requests</string>
+        <string>worker_connections</string>
+        <string>worker_cpu_affinity</string>
+        <string>worker_priority</string>
+        <string>worker_processes</string>
+        <string>worker_rlimit_core</string>
+        <string>worker_rlimit_nofile</string>
+        <string>worker_rlimit_sigpending</string>
+        <string>working_directory</string>
+        <string>xclient</string>
+        <string>xml_entities</string>
+        <string>xslt_last_modified</string>
+        <string>xslt_param</string>
+        <string>xslt_string_param</string>
+        <string>xslt_stylesheet</string>
+        <string>xslt_types</string>
+        <string>zone</string>
+    </array>
+
+    <key>Language Features</key>
+    <dict>
+        <key>Identifier and Keyword Character Class</key>
+            <string>\w</string>
+
+        <key>Open Strings 1</key>               <string>"</string>
+        <key>Close Strings 1</key>              <string>"</string>
+        <key>Open Strings 2</key>               <string>'</string>
+        <key>Close Strings 2</key>              <string>'</string>
+        <key>Escape Char in Strings 1</key>     <string>\</string>
+        <key>End-of-line Ends Strings 1</key>   <true/>
+        <key>End-of-line Ends Strings 2</key>   <true/>
+        <key>Open Line Comments</key>           <string>#</string>
+        <key>Open Statement Blocks</key>        <string>{</string>
+        <key>Close Statement Blocks</key>       <string>}</string>
+
+<!--
+        <key>Funtion Pattern</key>
+        <string><![CDATA[
+        (?x:
+            (?P<leadspace>^\s*)
+            (?P<function>
+                (?P<function_name>\w+)
+                (?s:.+?)
+                \r(?P=leadspace)}
+            )
+        )
+        ]]>
+        </string>
+ -->
+<!--
+        <key>String Pattern</key>
+        <string><![CDATA[
+        (?x:
+            ("(\\"|[^"\r]|\\\r)*") |  (?# Double-quote)
+            ('(\\'|[^'\r]|\\\r)*') |  (?# Single-quote)
+        )
+        ]]>
+        </string>
+ -->
+<!--
+        <key>Comment Pattern</key>
+        <string>#.+$</string>
+ -->
+<!--
+        <key>Skip Pattern</key>
+        <string><![CDATA[
+        (?x:
+            (?P>comment) |
+            (?P>string)
+        )]]></string>
+ -->
+
+    </dict>
+</dict>
+</plist>
